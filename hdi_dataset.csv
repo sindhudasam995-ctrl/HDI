@@ -1,0 +1,11 @@
+Country,Life_Expectancy,Mean_Years_of_Schooling,Expected_Years_of_Schooling,GNI_Per_Capita,HDI_Score
+India,67.2,6.7,12.6,7000,0.644
+Japan,84.5,13.5,15.8,47000,0.925
+Australia,83.1,12.9,21.1,62000,0.951
+United States,77.5,13.7,16.3,70000,0.921
+Germany,81.0,14.2,17.1,60000,0.942
+Canada,82.3,13.8,16.5,58000,0.936
+China,78.2,8.1,14.8,19000,0.788
+Brazil,75.5,8.2,15.3,14500,0.760
+France,82.4,13.4,15.9,55000,0.903
+Singapore,83.9,11.9,16.3,85000,0.949
