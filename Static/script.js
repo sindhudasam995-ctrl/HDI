@@ -1,0 +1,1 @@
+console.log("HDI Predictor Loaded Successfully!");
