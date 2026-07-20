@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HDI Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>A Comprehensive Measure of Well-Being</h1>
+    <h3>Human Development Index Predictor</h3>
+
+    <form action="/predict" method="POST">
+
+        <label>Select Country:</label>
+
+        <select name="country" required>
+
+            <option value="">-- Select Country --</option>
+
+            {% for country in countries %}
+            <option value="{{ country }}">{{ country }}</option>
+            {% endfor %}
+
+        </select>
+
+        <br><br>
+
+        <button type="submit">
+            Predict HDI
+        </button>
+
+    </form>
+
+    {% if prediction %}
+
+    <div class="result">
+
+        <h2>Prediction Result</h2>
+
+        <p><strong>Country:</strong> {{ selected_country }}</p>
+
+        <p><strong>Life Expectancy:</strong> {{ life_expectancy }}</p>
+
+        <p><strong>Mean Years of Schooling:</strong> {{ mean_years }}</p>
+
+        <p><strong>Expected Years of Schooling:</strong> {{ expected_years }}</p>
+
+        <p><strong>GNI Per Capita:</strong> {{ gni }}</p>
+
+        <p><strong>Predicted HDI Score:</strong> {{ prediction }}</p>
+
+        <p><strong>HDI Category:</strong> {{ category }}</p>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
